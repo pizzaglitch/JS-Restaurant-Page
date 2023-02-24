@@ -2,9 +2,12 @@ import './style.css';
 import './initialLoad.js';
 import './aboutPage.js';
 import './menuPage.js';
+import './contactPage.js';
+
 import { aboutPage } from './aboutPage.js';
 import { menuPage } from './menuPage.js';
-// import { buildLayout } from './initialLoad.js';
+import { buildLayout } from './initialLoad.js';
+import { contactPage } from './contactPage.js';
 
 // function divCreator() {
 //     const element = document.createElement('div'); 
@@ -30,5 +33,17 @@ function menuReset() {
     menuPage()
 }
 
-// const homepageLink = document.getElementById('Header')
-// homepageLink.addEventListener('click', buildLayout())
+const homepageLink = document.getElementById('Home')
+homepageLink.addEventListener('click', landingReset)
+function landingReset() {
+    contentContainer.innerText = '';
+    buildLayout()
+}
+
+const contactLink = document.getElementById('Contact')
+contactLink.addEventListener('click', contactReset)
+function contactReset() {
+    contentContainer.innerText = '';
+    contactPage()
+}
+

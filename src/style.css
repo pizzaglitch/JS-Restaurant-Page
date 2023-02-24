@@ -25,7 +25,7 @@ a:active {
     flex-direction: column;
     align-items: center;
 }
-#pizzaImg, #saladImg, #breadImg, #openBoxImg, #menuImg, #phoneImg {
+#pizzaImg, #saladImg, #breadImg, #dinnerTable, #menuImg, #phoneImg {
     height: 150px;
     /* width: 150px; */
 }
@@ -38,6 +38,9 @@ a:active {
 } */
 
 p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
 }
 #contactHours {
@@ -52,3 +55,9 @@ tbody > * {
     justify-content: space-between;
     gap: 50px;
 }
+/* 
+.contactPara {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+} */

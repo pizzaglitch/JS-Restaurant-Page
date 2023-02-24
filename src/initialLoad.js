@@ -29,31 +29,34 @@ export function createImg(idName, source) {
     return createImg
 }
 
-//reates header
 document.getElementById('content').appendChild(createIdElement('div', 'header', 'Nikki\'s Nom Nom\'s'));
 
-//creates navbar links 
+
 function navBar() {
     document.getElementById('content').appendChild(createIdElement('div', 'navBar', ''));
-    document.getElementById('navBar').appendChild(createIdElement('a', 'About', 'About'));
+    document.getElementById('navBar').appendChild(createIdElement('a', 'Home', 'Home'));
     document.getElementById('navBar').appendChild(createIdElement('a', 'Menu', 'Menu'));
+    document.getElementById('navBar').appendChild(createIdElement('a', 'About', 'About'));
     document.getElementById('navBar').appendChild(createIdElement('a', 'Contact', 'Contact'));
 }
 navBar()
 
 
 function landingPageImages() {
+    const infoParagraph = createClassElement('p','info','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor neque id rutrum hendrerit. Maecenas semper volutpat fermentum. Fusce maximus sapien libero. Cras porttitor sem at interdum venenatis. Mauris feugiat ipsum eget mauris tincidunt eleifend. Nunc varius auctor nunc vel laoreet. Maecenas faucibus erat vel urna pretium, in porta velit varius.')
+
     document.getElementById('content').appendChild(createIdElement('div', 'contentContainer', ''));
     document.getElementById('contentContainer').appendChild(createImg('pizzaImg', pizzaImg));
+    document.getElementById('contentContainer').appendChild(infoParagraph);
     document.getElementById('contentContainer').appendChild(createImg('saladImg', saladImg));
     document.getElementById('contentContainer').appendChild(createImg('breadImg', breadImg));
 }
 landingPageImages()
 
-function landingPageText() {
-    contentContainer.insertBefore(infoParagraph, document.getElementById('saladImg'))
-}
-const infoParagraph = createClassElement('p','info','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor neque id rutrum hendrerit. Maecenas semper volutpat fermentum. Fusce maximus sapien libero. Cras porttitor sem at interdum venenatis. Mauris feugiat ipsum eget mauris tincidunt eleifend. Nunc varius auctor nunc vel laoreet. Maecenas faucibus erat vel urna pretium, in porta velit varius.')
+// function landingPageText() {
+//     contentContainer.insertBefore(infoParagraph, document.getElementById('saladImg'))
+// }
+// const infoParagraph = createClassElement('p','info','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor neque id rutrum hendrerit. Maecenas semper volutpat fermentum. Fusce maximus sapien libero. Cras porttitor sem at interdum venenatis. Mauris feugiat ipsum eget mauris tincidunt eleifend. Nunc varius auctor nunc vel laoreet. Maecenas faucibus erat vel urna pretium, in porta velit varius.')
 
 const hoursTable = createIdElement('table', 'contactHours', '')
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -75,10 +78,12 @@ function contactHours() {
     })
     contentContainer.insertBefore(hoursTable, document.getElementById('breadImg'))
 }
-landingPageText()
+// landingPageText()
 contactHours()
 
-// export function buildLayout() {
-//     landingPageImages()
-//     landingPageText()
-// }
+export function buildLayout() {
+    contentContainer.innerText = '';
+    landingPageImages()
+    // landingPageText()
+    contactHours()
+}

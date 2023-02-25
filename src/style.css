@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'VT323';
+    src: url('./VT323-Regular.ttf') format('truetype');
+}
+
 body {
 overflow: hidden;
 }
@@ -11,9 +16,16 @@ overflow: hidden;
 #header, #navBar {
     display: flex;
     justify-content: center;
+    font-family: 'VT323';
     gap: 100px;
 }
 
+#header {
+    font-size: 44px;
+}
+#navBar {
+    font-size: 20px;
+}
 a {
     cursor: grab;
 }

@@ -24,7 +24,7 @@ overflow: hidden;
     font-size: 44px;
 }
 #navBar {
-    font-size: 20px;
+    font-size: 26px;
 }
 a {
     cursor: grab;
@@ -38,21 +38,16 @@ a:active {
     align-items: center;
 }
 #contentContainer > img {
-    /* margin: 20px 0 50px 0; */
-    margin-top: 20px;
-    margin-bottom: 22px;
+    margin: 10px 0 22px 0;
 }
 
 #pizzaImg, #saladImg, #breadImg, #dinnerTable, #menuImg, #phoneImg {
     height: 150px;
-    /* width: 150px; */
 }
 #us {
     height: 120px;
 }
-/* img {
-    height: 150px;
-} */
+
 .info, #aboutParagraph, #menuParagraph, #aboutParagraph {
     display: flex;
     flex-direction: column;
@@ -60,12 +55,10 @@ a:active {
     width: 500px;
 }
 
-/* p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-} */
+p, #contactHours {
+    font-family: Courier;
+}
+
 #contactHours {
     display: flex;
     flex-direction: column;
@@ -89,11 +82,15 @@ tbody > * {
     height: 100px;
     width: 100px;
 }
+#menuContainer p {
+    margin-top: 5px; 
+    width: 280px;
+}
 .menuItem {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 340px;
     text-align: center;
 }
 
@@ -101,5 +98,4 @@ tbody > * {
     margin-bottom: 5px;
     font-family: 'VT323';
     font-size: 26px;
-
 }

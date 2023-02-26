@@ -14,16 +14,13 @@ import { contactPage } from './contactPage.js';
 //     element.classList.add('hello');
 //     return element
 // }
-// document.getElementById('content').appendChild(divCreator());
-// getElementById('content')
+//
 
-
-
-const aboutLink = document.getElementById('About')
-aboutLink.addEventListener('click', aboutReset)
-function aboutReset() {
+const homepageLink = document.getElementById('Home')
+homepageLink.addEventListener('click', landingReset)
+function landingReset() {
     contentContainer.innerText = '';
-    aboutPage()
+    buildLayout()
 }
 
 const menuLink = document.getElementById('Menu')
@@ -33,11 +30,11 @@ function menuReset() {
     menuPage()
 }
 
-const homepageLink = document.getElementById('Home')
-homepageLink.addEventListener('click', landingReset)
-function landingReset() {
+const aboutLink = document.getElementById('About')
+aboutLink.addEventListener('click', aboutReset)
+function aboutReset() {
     contentContainer.innerText = '';
-    buildLayout()
+    aboutPage()
 }
 
 const contactLink = document.getElementById('Contact')

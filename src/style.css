@@ -41,7 +41,11 @@ a:active {
     margin: 10px 0 22px 0;
 }
 
-#pizzaImg, #saladImg, #breadImg, #dinnerTable, #menuImg, #phoneImg {
+#buildingImg {
+    height: 260px; 
+    width: 505px;
+}
+#saladImg, #breadImg, #dinnerTable, #menuImg, #phoneImg {
     height: 150px;
 }
 #us {

@@ -23,20 +23,25 @@ header, #navBar {
 header {
     font-size: 44px;
 }
+
 #navBar {
     font-size: 26px;
 }
+
 a {
     cursor: grab;
 }
+
 a:active {
     cursor: grabbing;
 }
+
 #contentContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #contentContainer > img {
     margin: 10px 0 22px 0;
 }
@@ -88,6 +93,7 @@ tbody > * {
     height: 100px;
     width: 100px;
 }
+
 #menuContainer p {
     margin-top: 5px; 
     width: 280px;

@@ -1,6 +1,5 @@
 import phoneImg from './images/phone.jpeg'
 import { createImg } from './initialLoad.js';
-import breadImg from './images/gbread.jpg';
 import { createClassElement } from './initialLoad.js';
 import { createIdElement } from './initialLoad.js';
 
@@ -24,7 +23,6 @@ function contactHours() {
         let cell2 = row1.insertCell(hours)
         let cell1 = row1.insertCell(day)
         cell1.innerText = day
-        // cell2.innerText = hours
         if ([day] == 'Saturday' || [day] == 'Sunday') {
             cell2.innerText = hours[1]
         } else {
@@ -32,6 +30,4 @@ function contactHours() {
         }
     })
     document.getElementById('contentContainer').appendChild(hoursTable);
-    // contentContainer.insertBefore(hoursTable, document.getElementById('breadImg'))
-    // document.getElementById('contentContainer').appendChild(createImg('breadImg', breadImg));
 }

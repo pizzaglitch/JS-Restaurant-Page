@@ -13,14 +13,14 @@ overflow: hidden;
     gap: 15px;
 }
 
-#header, #navBar {
+header, #navBar {
     display: flex;
     justify-content: center;
     font-family: 'VT323';
-    gap: 100px;
+    gap: 125px;
 }
 
-#header {
+header {
     font-size: 44px;
 }
 #navBar {
@@ -42,24 +42,26 @@ a:active {
 }
 
 #buildingImg {
-    height: 260px; 
-    width: 505px;
+    height: 315px; 
+    width: 670px;
 }
-#saladImg, #breadImg, #dinnerTable, #menuImg, #phoneImg {
-    height: 150px;
-}
+
 #us {
     height: 120px;
 }
 
-.info, #aboutParagraph, #menuParagraph, #aboutParagraph {
+img {
+    height: 130px;
+}
+
+.info, #aboutParagraph {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 500px;
 }
 
-p, #contactHours {
+p, .aboutUs, #contactHours {
     font-family: Courier;
 }
 

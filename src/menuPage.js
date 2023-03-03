@@ -18,7 +18,7 @@ export function menuPage() {
 }
 
 function menuItem(title, description, imgName, imgSource) {
-    const menuItem = document.getElementById('menuContainer').appendChild(createClassElement('div','menuItem',''));
+    const menuItem = document.getElementById('menuContainer').appendChild(createClassElement('section','menuItem',''));
     menuItem.appendChild(createImg(imgName, imgSource))
     menuItem.appendChild(createNewElement('h3', title));
     menuItem.appendChild(createNewElement('p', description));
